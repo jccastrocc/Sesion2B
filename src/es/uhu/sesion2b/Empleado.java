@@ -10,7 +10,7 @@ public class Empleado {
 	float primas;
 	float horasExtras;
 
-	public float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExta) {
+	public float calculoNominaBruta(TipoEmpleado tipo, float ventasMes, float horasExtras) {
 
 		if (tipo == TipoEmpleado.ENCARGADO) {
 			salarioBase = 2500;
@@ -18,7 +18,7 @@ public class Empleado {
 			salarioBase = 2000;
 		}
 
-		if (ventasMes >= 2500) {
+		if (ventasMes >= 1500) {
 			primas = 200;
 		} else if (ventasMes >= 1000) {
 			primas = 100;
